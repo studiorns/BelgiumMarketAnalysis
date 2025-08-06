@@ -15,12 +15,14 @@ const belgiumData = {
         '2025': [25.0, 15.0, 28.0, 18.0, 80.0, 45.0, 43.0, 34.0, 10.0, 15.0, 72.0, 53.0]
     },
     flightSearches: {
-        '2023': [668, 400, 453, 416, 388, 244, 324, 337, 403, 537, 692, 633],
-        '2024': [890, 742, 473, 382, 438, 420, 729, 523, 811, 839, 659, 888]
+        '2023': [11796, 10353, 10321, 10067, 8479, 6184, 8672, 9181, 10863, 13385, 16086, 15921],
+        '2024': [15791, 11098, 10014, 8415, 6593, 5492, 7915, 9028, 13652, 14769, 13266, 15156],
+        '2025': [14645, 11381, 12441, 9908, 9594, 8336, 8674, null, null, null, null, null]
     },
     hotelGuests: {
         '2023': [1175, 1319, 956, 964, 806, 357, 492, 568, 595, 1333, 1565, 1417],
-        '2024': [1349, 2058, 1451, 1721, 1187, 823, 1213, 905, 1044, 1783, 1760, 1980]
+        '2024': [1349, 2058, 1451, 1721, 1187, 823, 1213, 905, 1044, 1783, 1760, 1980],
+        '2025': [1678, 2145, 1497, 2146, 1295, 890, null, null, null, null, null, null]
     },
     growth: {
         '2021': 34.1,
@@ -375,6 +377,14 @@ function initCharts() {
                     backgroundColor: 'rgba(255, 159, 64, 0.1)',
                     borderWidth: 2,
                     fill: false
+                },
+                {
+                    label: '2025',
+                    data: belgiumData.flightSearches['2025'],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.1)',
+                    borderWidth: 2,
+                    fill: false
                 }
             ]
         },
@@ -446,6 +456,14 @@ function initCharts() {
                     data: belgiumData.hotelGuests['2024'],
                     borderColor: 'rgba(255, 159, 64, 1)',
                     backgroundColor: 'rgba(255, 159, 64, 0.1)',
+                    borderWidth: 2,
+                    fill: false
+                },
+                {
+                    label: '2025',
+                    data: belgiumData.hotelGuests['2025'],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.1)',
                     borderWidth: 2,
                     fill: false
                 }
